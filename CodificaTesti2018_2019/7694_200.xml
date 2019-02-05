@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_scheme.dtd">
+<?xml-stylesheet type="text/xsl" href="xsl/transform.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edizione digitale</title>
+                <respStmt>
+                    <resp>Trascrizione a cura di</resp>
+                    <name xml:id="A_A">Alessandro Arena</name>
+                    <name xml:id="D_C">Davide Cucurnia</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Studenti del corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                    <date>2019</date>
+                </edition>
+                <respStmt>
+                    <resp>Codificato da</resp>
+                    <name ref="#A_A">Alessandro Arena</name>
+                    <name ref="#D_C">Davide Cucurnia</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <name xml:id="XY2">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>Corso di Codifica di Testi</distributor>
+                <address>
+                    <addrLine>Corso di Codifica di Testi - Università di Pisa</addrLine>
+                    <addrLine>(Pisa)</addrLine>
+                </address>
+            </publicationStmt>
+            <notesStmt>
+                <note>Sul retro troviamo il titolo dell'opera, il nome dell'artista (G.Bertini) e l'ubicazione: "Milano, Pinacoteca di Brera".</note>
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    <title type="custom" resp="#ES">Venezia</title>
+                    <author>Giuseppe Bertini</author>
+                    <publisher>Racc. del dott.cav.uff. I. Tonta</publisher>
+                    <pubPlace>Milano</pubPlace>
+                    <date>1918</date>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana"</repository>
+                        <collection>Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</collection>
+                        <idno>7694_200_001/002</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <material>Carta</material>
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                    <stamp>francobollo - Poste Italiane</stamp>
+                                </support>
+                                <condition>Discreto</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                </msDesc>
+                <listPerson>
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                    </person>
+                    <person xml:id="GS">
+                        <persName>
+                            <forename>Giovannino</forename>
+                            <surname>Sconosciuto</surname>
+                        </persName>
+                        <sex>M</sex>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place xml:id="RA">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RA</district>
+                        <country key="N">IT</country>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#GS"/>
+                    <date type="writing" when="1918-02-12">1918/02/12</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#OT"/>
+                    <placeName ref="#RA"/>
+                </correspAction>
+            </correspDesc>
+            <textClass>
+                <keywords>
+                    <term>Cartolina</term>
+                    <term>Cartolina Artistica</term>
+                    <term>Paesaggio</term>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+            </langUsage>
+        </profileDesc>  
+    </teiHeader>
+    <text type="cartolina">
+        <body>
+            <div facs="img/7694-200R.jpg" type="retro">
+                <div type="message">
+                    <p><w pos="propernoun">Formigine</w><pc pos="coma">,</pc> <w pos="adverb">li</w> <date>12/02-1918</date></p>
+                    <p><w lemma="Pensare" pos="verb">Penso</w><w pos="personalpronoun">ti</w><pc pos="coma">,</pc> <w pos="adverb">così</w> <w pos="adjective">fieri</w></p>
+                    <p><w pos="conjuction">ed</w> <w lemma="Ardere" pos="adjective">ardenti</w></p>
+                    <signed><w pos="possessivepronoun">tuo</w> <w pos="propernoun">Giovannino</w></signed>
+                </div>
+                <div type="destination">
+                    <p>
+                        <stamp type="postmark"> 
+                            <mentioned>Formigine &#9733; Modena</mentioned>
+                            <date when="1918-02-16">1918/02/16</date>
+                        </stamp>
+                        <stamp type="postage">Francobollo da 5 centesimi di Poste Italiane</stamp>
+                    </p>
+                    <p>
+                        <address>
+                            <addrLine>Gent Sig</addrLine>
+                            <addrLine><persName ref="#OT">Oliva Turtura</persName></addrLine>
+                            <addrLine>Via Girolamo Rossi 58</addrLine>
+                            <addrLine> <placeName ref="#RA">Ravenna</placeName></addrLine>
+                        </address>
+                    </p>
+                </div>
+            </div>
+            <div facs="img/7694-200F.jpg" type="fronte">
+                <figure>
+                    <graphic url="img/7694-200F.jpg" />
+                    <figDesc>Veduta della laguna di Venezia</figDesc>
+                    <head>Venezia</head>
+                </figure>
+            </div>
+        </body>
+    </text>
+</TEI>

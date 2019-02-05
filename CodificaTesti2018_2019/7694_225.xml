@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_scheme.dtd">
+<?xml-stylesheet type="text/xsl" href="xsl/transform.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edizione digitale</title>
+                <respStmt>
+                    <resp>Trascrizione a cura di</resp>
+                    <name xml:id="A_Arena">Alessandro Arena</name>
+                    <name xml:id="D_Cucurnia">Davide Cucurnia</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Studenti del corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                    <date>2019</date>
+                </edition>
+                <respStmt>
+                    <resp>Codificato da</resp>
+                    <name ref="#A_A">Alessandro Arena</name>
+                    <name ref="#D_C">Davide Cucurnia</name>
+                </respStmt>
+                <respStmt> 
+                    <resp>Compilatore</resp>
+                    <name xml:id="XY2">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>Corso di Codifica di Testi</distributor>
+                <address>
+                    <addrLine>Corso di Codifica di Testi - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            <notesStmt>
+                <note>Sul retro troviamo il nome dell'artista (Antonio Van Dyck) e il titolo dell'opera in fronte.</note>
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    <title type="custom" resp="#ES">Ritratto di Amelia Solms</title>
+                    <author>Antonio Van Dyck</author>
+                    <publisher>Off. Ist. It. D'Arti Grafiche</publisher>
+                    <pubPlace>Bergamo</pubPlace>
+                    <date>1934</date>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana"</repository>
+                        <collection>Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</collection>
+                        <idno>7694_225_001/002</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <material>Carta</material>
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                    <stamp>francobollo - Poste Italiane</stamp>
+                                </support>
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                </msDesc>
+                <listPerson>
+                    <person xml:id="OL">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Luliola</surname>
+                        </persName>
+                        <sex>F</sex>
+                    </person>
+                    <person xml:id="Anonimo">
+                        <persName>
+                            <forename>A.</forename>
+                            <surname><unclear>Vau**</unclear></surname>
+                        </persName>
+                        <sex>M</sex>
+                        <note>La firma del mittente è stata aggiunta sopra il messaggio.</note>
+                    </person>
+                </listPerson>
+                <listPlace>
+                    <place xml:id="RA">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RA</district>
+                        <country key="N">IT</country>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#Anonimo"/>
+                    <date type="writing" when="1934-04-08">1934/04/08</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#OT"/>
+                    <placeName ref="#RA"/>
+                </correspAction>
+            </correspDesc>
+            <textClass>
+                <keywords scheme="">
+                    <term>Cartolina </term>
+                    <term>Cartolina Artistica </term>
+                    <term>Ritratto</term>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>   
+    <text type="cartolina">
+        <body>
+            <div facs="img/7694-225R.jpg" type="retro">
+                <div type="message">
+                    <p><w pos="adjective">Gentile</w> <w pos="commonnoun">Signora</w>, <w pos="adverb">oggi</w></p>
+                    <p><w pos="adjective">stesso</w> <w pos="article">la</w> <w pos="possessivepronoun">sua</w> <w pos="commonnoun">lettera</w> <w lemma="Portare" pos="verb">è stata portata</w></p>
+                    <p><w pos="preposition">da</w> <w pos="personalpronoun">me</w> <w pos="preposition">a</w> <w pos="commonnoun">destinazione</w><pc pos="fullstop">.</pc></p>
+                    <p><w pos="adverb">Non</w> <w lemma="Avere" pos="verb">ho</w> <w pos="conjuction">però</w> <w lemma="Potere" pos="verb">potuto</w> <w lemma="Conferire" pos="verb">conferire</w> </p>
+                    <p><w pos="adverb">come</w> <w lemma="Avere" pos="verb">avrei</w> <w lemma="Desiderare" pos="verb">desiderato</w> </p>
+                    <p><w pos="preposition">col</w> <w pos="commonnoun">destinario</w><pc pos="coma">,</pc> <w pos="relativepronoun">che</w> <w lemma="Trovare" pos="verb">trova</w><w pos="personalpronoun">si</w></p>
+                    <p><w pos="preposition">a</w> <w pos="propernoun">Brescia</w><pc pos="fullstop">.</pc> <w pos="article">Il</w> <unclear reason="illegible"><w pos="propernoun">L**tani</w></unclear><pc pos="coma">,</pc> <w pos="relativepronoun">che</w></p>
+                    <signed><add><unclear><w pos="propernoun">A.Vau**</w></unclear></add></signed>
+                </div>
+                <div type="destination">
+                    <p>
+                        <stamp type="postmark"> 
+                            <mentioned>ROMA &#9733; FERROVIA &#9733; 21-02 G.M R IV 34.XII</mentioned>
+                        </stamp>
+                        <stamp type="postmark"> 
+                            <mentioned>RAVENNA &#9733; ARRIVI E PARTENZE &#9733; -9</mentioned>
+                            <date when="1934-04-13">04.34.13</date>
+                        </stamp>
+                        <stamp type="postmark"> 
+                            <mentioned>
+                                MOSTRA RIVOLUZIONE FASCISTA -
+                                ROMA RIDUZIONI FERROVIE 70%
+                            </mentioned>
+                        </stamp>
+                        <stamp type="postage">Francobollo da 30 centesimi di Poste Italiane</stamp>
+                    </p>
+                    <p>
+                        <address>
+                            <addrLine>Signora</addrLine>
+                            <addrLine><persName ref="#OL">Oliva Luliola</persName></addrLine>
+                            <addrLine>Via Girolamo Rossi</addrLine>
+                            <addrLine> <placeName ref="#RA">Ravenna</placeName></addrLine>
+                        </address>
+                    </p>
+                </div>
+            </div>
+            <div facs="img/7694-225F.jpg" type="fronte">
+                <div type="message">
+                        <p><w pos="personalpronoun">mi</w> <w lemma="Ricevere" pos="verb">ha ricevuto</w><pc pos="coma">,</pc> <w pos="personalpronoun">mi</w> <w lemma="Assicurare" pos="verb">ha assicurato</w> </p>
+                        <p><w pos="conjuction">che</w> <w lemma="Fare" pos="verb">saranno fatti</w> <w pos="article">i</w> <w pos="commonnoun">passi</w> <w pos="preposition">del</w></p>
+                        <p><w pos="commonnoun">caso</w> <w pos="conjuction">e</w> <w lemma="Potere" pos="verb">possiamo</w> <w lemma="Sperare" pos="verb">sperare</w> <w pos="adverb">bene</w><pc pos="fullstop">.</pc></p>
+                        <p><w lemma="Sperare" pos="verb">Spero</w> <w lemma="Vedere" pos="verb">vider</w><w pos="personalpronoun">la</w> <w pos="adverb">presto</w><pc pos="fullstop">.</pc> <w pos="adverb">Intanto</w><pc pos="coma">,</pc> <w pos="article">i</w> <w pos="adjective">migliori</w></p> <p><w pos="commonnoun">saluti</w></p>
+                </div>
+                <figure>
+                    <figDesc>Ritratto di donna</figDesc>
+                    <head>Ritratto di Amelia Solms</head>
+                </figure>
+            </div>            
+        </body>
+    </text>
+</TEI>

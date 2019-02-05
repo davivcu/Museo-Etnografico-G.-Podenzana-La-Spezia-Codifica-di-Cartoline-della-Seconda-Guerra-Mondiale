@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_scheme.dtd">
+<?xml-stylesheet type="text/xsl" href="xsl/transform.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edizione digitale</title>
+                <respStmt>
+                    <resp>Trascrizione a cura di</resp>
+                    <name xml:id="D_C">Davide Cucurnia</name>
+                    <name xml:id="A_A">Alessandro Arena</name>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+                </respStmt>
+                
+            </titleStmt>
+            
+            <editionStmt>
+                <edition>Studenti del corso di Laurea Triennale di Informatica Umanistica, Università di Pisa
+                    <date>2019</date>
+                </edition>
+                
+                <respStmt>
+                    <resp>Codificato da</resp>
+                    <name ref="#A_A">Alessandro Arena</name>
+                    <name ref="#D_C">Davide Cucurnia</name>
+                </respStmt>
+                
+
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <name xml:id="XY2">Tommaso Castagneto</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="MR">Marzia Ratti</name>
+                </respStmt>
+            </editionStmt>
+            
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>Corso di Codifica di Testi</distributor>
+                <address>
+                    <addrLine>Corso di Codifica di Testi - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note>Nel fronte della stampa si trova la firma dell'autore dell'opera "Henry Tenre".</note>
+            </notesStmt>
+            
+            <sourceDesc>
+                <bibl>
+                    <title type="custom" resp="#ES">D&#233;vouement</title>
+                    <author>Henry Tenré</author>
+                    <publisher>I.Lapina</publisher>
+                    <pubPlace>Parigi</pubPlace>
+                    <date>1917</date>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Italia</country>
+                        <settlement>La Spezia (SP)</settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana"</repository>
+                        <collection>Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</collection>
+                        <idno>7694_222_001/002</idno>
+                    </msIdentifier>
+                    
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    
+                    
+                    
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <material>Carta</material>
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                    <stamp>francobollo - Regno d'Italia</stamp>
+                                </support>
+                                
+                                <condition>Discreto</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+            
+                    
+                </msDesc>
+                
+                <listPerson>
+                    <person xml:id="LG">
+                        <persName>
+                            <forename>Luigi</forename>
+                            <surname>Gastaldo</surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation n="1">[tenente]</occupation>
+                    </person>
+                    <person xml:id="LS">
+                        <persName>
+                            <forename>Luigia</forename>
+                            <surname>Sconosciuto</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <note>Il cognome non è dichiarato.</note>
+                    </person>
+                </listPerson>
+                
+                <listPlace>
+                    <place xml:id="MO">
+                        <placeName>Modena</placeName>
+                        <settlement type="località">36o fanteria</settlement>
+                        <district type="comune">Modena</district>
+                        <district type="provincia">MO</district>
+                        <country key="N">IT</country>
+                        <note>La seconda riga dell'indirizzo è parzialmente illeggibile.</note>
+                    </place>
+                </listPlace>
+                
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#LS"/>
+                    <date type="writing" when="1917-12-22">1917/12/22</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#LG"/>
+                    <placeName ref="#MO"/>
+                </correspAction>
+            </correspDesc>
+            
+            <textClass>
+                <keywords scheme="">
+                    <term>Cartolina </term>
+                    <term>Cartolina Artistica </term>
+                    <term>Donna della Croce Rossa</term>
+                </keywords>
+            </textClass>
+            
+            <langUsage>
+                <language ident="it-IT">italiano</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    
+    <text type="cartolina">
+        <body>
+            <div facs="img/7694-222R.jpg" type="retro">
+                <div type="message">
+                    <p>
+                        <date>22/
+                            <subst>
+                                <del rend="overstrike">11</del>
+                                <add>12</add>
+                            </subst>/17
+                        </date>
+                    </p>
+                    <p><w pos="commonnoun">Saluti</w></p>
+                    <signed><w pos="propernoun">Luigia</w></signed>
+                </div>
+                <div type="destination">
+                    <p>
+                        <stamp type="postmark"> 
+                            <date when="1917-12-22">1917/12/22</date>
+                        </stamp>
+                        <stamp type="postage">Francobollo da 5 centesimi di Poste Italiane</stamp>
+                    </p>
+                    <p>
+                        <address>
+                            <addrLine>Tenente</addrLine>
+                            <addrLine><persName ref="#LG">Gastaldo <expan>Signor</expan> Luigi</persName></addrLine>
+                            <addrLine>Ufficio <gap reason="illegible" extent="6" unit="chars"/> di Fanteria</addrLine>
+                            <addrLine>36a Fanteria</addrLine>
+                            <addrLine> <placeName ref="#MO">Modena</placeName></addrLine>
+                        </address>
+                    </p>
+                </div>
+            </div>
+            <div facs="img/7694-222F.jpg" type="fronte">
+                <div type="message">
+                    <p><w pos="personalpronoun">Ti</w> <w lemma="Ricordare" pos="verb">ricordi</w><pc type="interrogative">?</pc></p>
+                </div>
+                <figure>   
+                    <graphic url="img/7694-222F.jpg" />
+                    <figDesc>Crocerossina guarda all'orizzonte</figDesc>
+                    <head>D&#233;vouement di Henry Tenre</head>
+                </figure>
+            </div>            
+        </body>
+    </text>
+</TEI>
