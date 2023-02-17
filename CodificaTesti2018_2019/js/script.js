@@ -10,8 +10,7 @@ var nodoTimbri;
 var menu = false;
 var nodoAnalisiRetro = [];
 var nodoAnalisiFronte = [];
-
-traduzione = [
+var traduzione = [
 	{eng:"publisher", ita:"Editore:" },
 	{eng:"pubPlace", ita:"Luogo di Pubblicazione:"},
 	{eng:"date", ita:"Data"},
