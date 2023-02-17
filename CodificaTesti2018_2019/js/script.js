@@ -11,55 +11,56 @@ var menu = false;
 var nodoAnalisiRetro = [];
 var nodoAnalisiFronte = [];
 
-traduzione = [];
-traduzione[0] = { eng:"publisher", ita:"Editore:" };
-traduzione[1] = { eng:"pubPlace", ita:"Luogo di Pubblicazione:"};
-traduzione[2] = { eng:"date", ita:"Data"};
-traduzione[3] = { eng:"distributor", ita:"Distributore:"};
-traduzione[4] = { eng:"address", ita:"Indirizzo:"};
-traduzione[5] = { eng:"title", ita:"Titolo:"};
-traduzione[6] = { eng:"author", ita:"Autore:"};
-traduzione[7] = { eng:"place", ita:"Destinazione"};
-traduzione[8] = { eng:"bibl", ita:"Riferimenti opera"};
-traduzione[9] = { eng:"msContents", ita:"Specifiche"};
-traduzione[10] = {eng:"physDesc", ita:"Tipo:"};
-traduzione[11] = {eng:"msIdentifier", ita:"Luogo di conservazione"};
-traduzione[12] = {eng:"availability", ita:"Disponibilità:"};
-traduzione[13] = {eng:"msDesc", ita:"Descrizione:"};
-traduzione[14] = {eng:"objectType", ita:"Tipo:"};
-traduzione[15] = {eng:"commonnoun", ita:"Nome comune"};
-traduzione[16] = {eng:"person", ita:""}
-traduzione[17] = {eng:"country", ita:"Paese:"};
-traduzione[18] = {eng:"idno", ita:"Identificativo:"};
-traduzione[19] = {eng:"textLang", ita:"Lingua:"};
-traduzione[20] = {eng:"preposition", ita:"Preposizione"};
-traduzione[21] = {eng:"material", ita:"Materiale:"};
-traduzione[22] = {eng:"dimensions", ita:"Dimensione:"};
-traduzione[23] = {eng:"stamp", ita:"Francobollo:"};
-traduzione[24] = {eng:"conjuction", ita:"Congiunzione"};
-traduzione[25] = {eng:"verb", ita:"Verbo"};
-traduzione[26] = {eng:"surname", ita:"Cognome:"};
-traduzione[27] = {eng:"sex", ita:"Sesso:"};
-traduzione[28] = {eng:"propernoun", ita:"Nome proprio"};
-traduzione[29] = {eng:"persName", ita:"Nome:"};
-traduzione[30] = {eng:"placeName", ita:"Nome del luogo:"};
-traduzione[31] = {eng:"relativepronoun", ita:"Pronome relativo"};
-traduzione[32] = {eng:"language", ita:"Lingua:"};
-traduzione[33] = {eng:"article", ita:"Articolo"};
-traduzione[34] = {eng:"possessivepronoun", ita:"Pronome Possessivo"};
-traduzione[35] = {eng:"adjective", ita:"Aggettivo"};
-traduzione[36] = {eng:"adverb", ita:"Avverbio"};
-traduzione[37] = {eng:"personalpronoun", ita:"Pronome Personale"};
-traduzione[38] = {eng:"illegible", ita:"Illeggibile"};
-traduzione[39] = {eng:"interrogative", ita:"Punto Interrogativo"};
-traduzione[40] = {eng:"summary", ita:"Sintesi:"};
-traduzione[41] = {eng:"settlement", ita:"Città:"};
-traduzione[42] = {eng:"repository", ita:"Conservazione:"};
-traduzione[43] = {eng:"district", ita:"Area:"};
-traduzione[44] = {eng:"support", ita:"Supporto"};
-traduzione[45] = {eng:"coma", ita:"Virgola"};
-traduzione[46] = {eng:"fullstop", ita:"Punto"};
-traduzione[47] = {eng:"collection", ita:"Collezione:"};
+traduzione = [
+	{eng:"publisher", ita:"Editore:" },
+	{eng:"pubPlace", ita:"Luogo di Pubblicazione:"},
+	{eng:"date", ita:"Data"},
+	{eng:"distributor", ita:"Distributore:"},
+	{eng:"address", ita:"Indirizzo:"},
+	{eng:"title", ita:"Titolo:"},
+	{eng:"author", ita:"Autore:"},
+	{eng:"place", ita:"Destinazione"},
+	{eng:"bibl", ita:"Riferimenti opera"},
+	{eng:"msContents", ita:"Specifiche"},
+	{eng:"physDesc", ita:"Tipo:"},
+	{eng:"msIdentifier", ita:"Luogo di conservazione"},
+	{eng:"availability", ita:"Disponibilità:"},
+	{eng:"msDesc", ita:"Descrizione:"},
+	{eng:"objectType", ita:"Tipo:"},
+	{eng:"commonnoun", ita:"Nome comune"},
+	{eng:"person", ita:""},
+	{eng:"country", ita:"Paese:"},
+	{eng:"idno", ita:"Identificativo:"},
+	{eng:"textLang", ita:"Lingua:"},
+	{eng:"preposition", ita:"Preposizione"},
+	{eng:"material", ita:"Materiale:"},
+	{eng:"dimensions", ita:"Dimensione:"},
+	{eng:"stamp", ita:"Francobollo:"},
+	{eng:"conjuction", ita:"Congiunzione"},
+	{eng:"verb", ita:"Verbo"},
+	{eng:"surname", ita:"Cognome:"},
+	{eng:"sex", ita:"Sesso:"},
+	{eng:"propernoun", ita:"Nome proprio"},
+	{eng:"persName", ita:"Nome:"},
+	{eng:"placeName", ita:"Nome del luogo:"},
+	{eng:"relativepronoun", ita:"Pronome relativo"},
+	{eng:"language", ita:"Lingua:"},
+	{eng:"article", ita:"Articolo"},
+	{eng:"possessivepronoun", ita:"Pronome Possessivo"},
+	{eng:"adjective", ita:"Aggettivo"},
+	{eng:"adverb", ita:"Avverbio"},
+	{eng:"personalpronoun", ita:"Pronome Personale"},
+	{eng:"illegible", ita:"Illeggibile"},
+	{eng:"interrogative", ita:"Punto Interrogativo"},
+	{eng:"summary", ita:"Sintesi:"},
+	{eng:"settlement", ita:"Città:"},
+	{eng:"repository", ita:"Conservazione:"},
+	{eng:"district", ita:"Area:"},
+	{eng:"support", ita:"Supporto"},
+	{eng:"coma", ita:"Virgola"},
+	{eng:"fullstop", ita:"Punto"},
+	{eng:"collection", ita:"Collezione:"}
+];
 
 function caricaImmagine() { /*carica l'immagine della cartolina*/
 	cartolina.setAttribute("src","img/"+percorso+"F.jpg");
@@ -184,7 +185,7 @@ window.onload = Load;
 
 function Load() {
 	cartolina = document.getElementById("cartolina");
-    percorso = document.getElementsByTagName("h1")[0].textContent.substring(10,18);
+   	percorso = document.getElementsByTagName("h1")[0].textContent.substring(10,18);
 	nodoTendina = document.getElementById("tendina");
 	nodoHeader = document.getElementsByTagName("header")[0];
 	nodoDidascalia = document.getElementById("figcaption");
@@ -194,14 +195,14 @@ function Load() {
 	nodoPopup = document.getElementById("popup");
 	nodoImmagine = document.getElementsByTagName("figure")[0];
 	nodoFinestra = document.getElementById("finestra");
-    caricaImmagine();
-    caricaMenu();
-    cartolina.onclick = giraCartolina;
-    contaTimbri();
-    traduci();
-    analisi(nodoAnalisiRetro);
-    if (document.getElementById("analisi_F") != null) {
-    	nodoAnalisiFronte = document.getElementById("analisi_F").childNodes;
-    	analisi(nodoAnalisiFronte)
-    }
+   	caricaImmagine();
+    	caricaMenu();
+    	cartolina.onclick = giraCartolina;
+    	contaTimbri();
+    	traduci();
+    	analisi(nodoAnalisiRetro);
+    	if (document.getElementById("analisi_F") != null) {
+    		nodoAnalisiFronte = document.getElementById("analisi_F").childNodes;
+    		analisi(nodoAnalisiFronte)
+    	}
 }
